@@ -1,0 +1,51 @@
+2025-08-31T07:33:29.000000000Z [inf]  Starting Container
+2025-08-31T07:33:30.930953500Z [err]  [2025-08-31 07:33:30 +0000] [1] [INFO] Starting gunicorn 23.0.0
+2025-08-31T07:33:30.930961422Z [err]  [2025-08-31 07:33:30 +0000] [1] [INFO] Listening at: http://0.0.0.0:8080 (1)
+2025-08-31T07:33:30.930966484Z [err]  [2025-08-31 07:33:30 +0000] [1] [INFO] Using worker: sync
+2025-08-31T07:33:30.930970944Z [err]  [2025-08-31 07:33:30 +0000] [2] [INFO] Booting worker with pid: 2
+2025-08-31T07:33:30.930975618Z [inf]  {'C_01': 'Matikan laptop; Periksa kabel monitor; Coba dengan monitor eksternal; Ganti monitor jika tidak berfungsi', 'C_02': 'Matikan laptop; Cabut RAM; Bersihkan pin RAM; Pasang kembali RAM; Coba ganti dengan RAM lain', 'C_03': 'Matikan laptop; Lepaskan HDD; Cek dengan komputer lain; Backup data; Ganti HDD jika rusak', 'C_04': 'Update driver VGA; Bersihkan kipas GPU; Cek suhu GPU; Ganti VGA jika masih rusak', 'C_05': 'Periksa volume & mute; Update driver sound; Coba speaker eksternal; Ganti sound card jika perlu', 'C_06': 'Boot safe mode; Jalankan System Restore; Penanganan malware; Install ulang OS jika perlu', 'C_07': 'Uninstall aplikasi bermasalah; Bersihkan registry; Install ulang aplikasi; Update versi terbaru', 'C_08': 'Matikan laptop; Periksa kabel power supply; Ganti adapter jika rusak', 'C_09': 'Bersihkan heatsink prosesor; Ganti pasta termal; Cek suhu CPU; Ganti prosesor jika overheat', 'C_10': 'Periksa alokasi RAM; Tutup aplikasi background; Tambahkan modul RAM', 'C_11': 'Periksa VRAM di BIOS; Upgrade VGA jika perlu', 'C_12': 'Cek clock speed CPU; Upgrade prosesor sesuai motherboard', 'C_13': 'Matikan laptop; Ganti kabel IDE', 'C_14': 'Periksa daya output PSU; Ganti PSU jika tidak stabil', 'C_15': 'Cek port USB; Coba perangkat USB lain; Ganti USB controller jika perlu', 'C_16': 'Bersihkan keyboard; Ganti switch yang rusak; Ganti keyboard jika perlu', 'C_17': 'Bersihkan mouse sensor; Ganti mouse jika tidak merespons', 'C_18': 'Periksa regulator motherboard; Ganti IC regulator jika rusak', 'C_19': 'Ganti charger; Periksa voltage output', 'C_20': 'Periksa sambungan SATA; Test dengan HDD lain; Ganti HDD jika rusak', 'C_21': 'Periksa output PSU; Ganti PSU jika perlu', 'C_22': 'Kalibrasi baterai; Ganti baterai jika tidak mengisi', 'C_23': 'Periksa retakan layar; Ganti panel LCD', 'C_24': 'Keringkan keyboard; Ganti keyboard kalau korosi', 'C_25': 'Bersihkan touchpad; Ganti modul touchpad jika perlu'}
+2025-08-31T07:33:30.930979978Z [inf]  {'A01': ['C_01'], 'A02': ['C_02'], 'A03': ['C_03'], 'A04': ['C_04'], 'A05': ['C_05'], 'A06': ['C_06'], 'A07': ['C_07'], 'A08': ['C_08'], 'A09': ['C_09'], 'A10': ['C_10'], 'A11': ['C_11'], 'A12': ['C_12'], 'A13': ['C_13'], 'A14': ['C_14'], 'A15': ['C_15'], 'A16': ['C_16'], 'A17': ['C_17'], 'A18': ['C_18'], 'A19': ['C_19'], 'A20': ['C_20'], 'A21': ['C_21'], 'A22': ['C_22'], 'A23': ['C_23'], 'A24': ['C_24'], 'A25': ['C_25']}
+2025-08-31T07:33:30.930987237Z [inf]  5000
+2025-08-31T07:33:30.930992956Z [inf]   * Serving Flask app 'app'
+2025-08-31T07:33:30.930997515Z [inf]   * Debug mode: off
+2025-08-31T07:33:30.931004880Z [err]  WARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.
+2025-08-31T07:33:30.931009437Z [err]   * Running on all addresses (0.0.0.0)
+2025-08-31T07:33:30.931013340Z [err]   * Running on http://127.0.0.1:5000
+2025-08-31T07:33:30.931017913Z [err]   * Running on http://10.250.21.27:5000
+2025-08-31T07:33:30.931022051Z [err]  Press CTRL+C to quit
+2025-08-31T07:34:10.963646593Z [err]  100.64.0.2 - - [31/Aug/2025 07:34:04] "GET /about HTTP/1.1" 200 -
+2025-08-31T07:34:10.963651914Z [err]  100.64.0.2 - - [31/Aug/2025 07:34:04] "GET /static/style.css HTTP/1.1" 404 -
+2025-08-31T07:34:10.963656528Z [err]  100.64.0.2 - - [31/Aug/2025 07:34:05] "GET /dashboard HTTP/1.1" 200 -
+2025-08-31T07:34:10.963661693Z [err]  100.64.0.2 - - [31/Aug/2025 07:34:06] "GET /static/style.css HTTP/1.1" 404 -
+2025-08-31T07:34:10.963667190Z [err]  [2025-08-31 07:34:07,187] ERROR in app: Exception on /cekpotensikangker [GET]
+2025-08-31T07:34:10.963672444Z [err]  Traceback (most recent call last):
+2025-08-31T07:34:10.963680016Z [err]    File "/app/.venv/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+2025-08-31T07:34:10.963684883Z [err]      response = self.full_dispatch_request()
+2025-08-31T07:34:10.963689853Z [err]                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-08-31T07:34:10.963693949Z [err]    File "/app/.venv/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+2025-08-31T07:34:10.963697901Z [err]      rv = self.handle_user_exception(e)
+2025-08-31T07:34:10.963702537Z [err]           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-08-31T07:34:10.963706916Z [err]    File "/app/.venv/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+2025-08-31T07:34:10.963714247Z [err]      rv = self.dispatch_request()
+2025-08-31T07:34:10.963718405Z [err]           ^^^^^^^^^^^^^^^^^^^^^^^
+2025-08-31T07:34:10.963722629Z [err]    File "/app/.venv/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+2025-08-31T07:34:10.963727703Z [err]      return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+2025-08-31T07:34:10.963737492Z [err]             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-08-31T07:34:10.963741695Z [err]    File "/app/app.py", line 440, in cekpotensikangker
+2025-08-31T07:34:10.963745990Z [err]      model = joblib.load("trainedmodel/cnb_tuned_1diz0qyanginibagus.joblib")
+2025-08-31T07:34:10.963750381Z [err]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-08-31T07:34:10.963755193Z [err]    File "/app/.venv/lib/python3.11/site-packages/joblib/numpy_pickle.py", line 749, in load
+2025-08-31T07:34:10.963760346Z [err]      obj = _unpickle(
+2025-08-31T07:34:10.963764579Z [err]            ^^^^^^^^^^
+2025-08-31T07:34:10.963768514Z [err]    File "/app/.venv/lib/python3.11/site-packages/joblib/numpy_pickle.py", line 626, in _unpickle
+2025-08-31T07:34:10.963772661Z [err]      obj = unpickler.load()
+2025-08-31T07:34:10.963777196Z [err]            ^^^^^^^^^^^^^^^^
+2025-08-31T07:34:10.963782447Z [err]    File "/mise/installs/python/3.11.13/lib/python3.11/pickle.py", line 1213, in load
+2025-08-31T07:34:10.963788829Z [err]      dispatch[key[0]](self)
+2025-08-31T07:34:10.963792796Z [err]    File "/mise/installs/python/3.11.13/lib/python3.11/pickle.py", line 1538, in load_stack_global
+2025-08-31T07:34:10.963797078Z [err]      self.append(self.find_class(module, name))
+2025-08-31T07:34:10.963801030Z [err]                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2025-08-31T07:34:10.963806026Z [err]    File "/mise/installs/python/3.11.13/lib/python3.11/pickle.py", line 1580, in find_class
+2025-08-31T07:34:10.963810530Z [err]      __import__(module, level=0)
+2025-08-31T07:34:10.963822768Z [err]  ModuleNotFoundError: No module named 'sklearn'
+2025-08-31T07:34:10.963827206Z [err]  100.64.0.2 - - [31/Aug/2025 07:34:07] "GET /cekpotensikangker HTTP/1.1" 500 -
